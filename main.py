@@ -6,7 +6,7 @@ from huggingface_hub import login
 import streamlit as st
 
 # Authenticate with Hugging Face
-HUGGINGFACE_TOKEN = st.secrets['HF_TOKAN'] # Replace with your token
+HUGGINGFACE_TOKEN = st.secrets['HF_TOKEN'] # Replace with your token
 login(token=HUGGINGFACE_TOKEN)
 
 # Load the Stable Diffusion model

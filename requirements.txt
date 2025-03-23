@@ -1,4 +1,6 @@
 streamlit
+asyncio
+toml
 torch
 torchvision
 torchaudio

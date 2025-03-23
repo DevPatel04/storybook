@@ -4,6 +4,12 @@ import os
 import shutil
 from diffusers import StableDiffusionPipeline
 from PIL import Image
+import asyncio
+import sys
+
+if sys.platform == "win32":
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
 
 def train_dreambooth(instance_prompt, upload_dir, model_save_path):
     """Train DreamBooth model dynamically."""

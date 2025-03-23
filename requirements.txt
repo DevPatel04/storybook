@@ -1,0 +1,14 @@
+torch
+torchvision
+numpy
+Pillow
+transformers
+accelerate
+diffusers==0.19.3
+safetensors
+huggingface_hub
+scipy
+opencv-python
+ftfy
+tqdm
+requests
